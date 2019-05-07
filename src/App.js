@@ -58,7 +58,7 @@ class App extends Component {
        </nav>
        <article class="container">
        <form>
-       <input id="search" type="search" onChange={this.searchChangeHandler.bind(this)} placeholder="Search Term" />
+       <input id="search" type="search" onChange={this.searchChangeHandler.bind(this)} placeholder="Search movies by title ..." />
        </form>
           {this.state.rows}
        </article>

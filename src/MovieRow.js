@@ -14,7 +14,7 @@ class MovieRow extends React.Component {
               <p>{this.props.movie.overview}</p>
               <p id="popularity">Popularity: {this.props.movie.popularity}</p>
               <p id="release">Release Date: {this.props.movie.release_date}</p>
-              <input id="btn" type="button" onClick={this.viewMovie.bind(this)} value="View Info" />
+              <input id="btn" type="button" onClick={this.viewMovie.bind(this)} value="See Info" />
             </div>
         </div>
         )

@@ -22,14 +22,14 @@ class App extends Component {
        var movieRows = []
        results.forEach((movie) => {
         movie.poster_src = "https://image.tmdb.org/t/p/w185" + movie.poster_path
-         const movieRow = <MovieRow key={movie.id} movie={movie} />
-         movieRows.push(movieRow)
+         const newMovieRow = <MovieRow key={movie.id} movie={movie} />
+         movieRows.push(newMovieRow)
        })
 
        this.setState({rows: movieRows})
       },
       error: (xhr, status, err) => {
-        console.log('Error');
+        console.log(`Error: ${err}`);
       }
     })
   }

@@ -2,10 +2,13 @@ import React from 'react';
 
 class MovieRow extends React.Component {
   viewMovie() {
+    // redirect to movie info page depending on the clicked
+    // movie and it's ID
     const urlRedirect = 'https://www.themoviedb.org/movie/' + this.props.movie.id;
     window.location.href = urlRedirect;
   }
     render() {
+      // movie info
         return (
         <div className="grid" key={this.props.movie.id}>
           <div className="center">

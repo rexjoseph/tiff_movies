@@ -9,7 +9,7 @@ class Movie extends Component {
     this.state = {} // state
 
   // default search term parameter
-  this.performSearch('Gandhi')
+  this.performSearch(' ')
 }
 
 // search function 
